@@ -1,0 +1,162 @@
+<!-- Visualization Page - Cloudiness -->
+
+
+<html lang="en">
+
+  <head>
+    <!-- encoding -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- page title -->
+    <title>Landing Page</title>
+
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <header>
+      <!--navbar-->
+      <nav class="navbar navbar-default">
+          <div class="navbar-container container-fluid">
+            <!-- brand and toggle -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+      
+              <!-- site name -->
+              <a class="btn btn-primary btn-lg" href="../index.html" style="color: rgb(255, 255, 255);" role="button"><strong>Latitude</strong></a>
+            </div>
+          
+            <!-- nav dropdown and links -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+      
+                <!-- large screen dropdown -->
+                <li class="dropdown" id="large-screen-dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>Plots</strong><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="temp.html">Max Temperature</a></li>
+                    <li><a href="humidity.html">Humidity</a></li>
+                    <li><a href="cloudiness.html">Cloudiness</a></li>
+                    <li><a href="wind-speed.html">Wind Speed</a></li>
+                  </ul>
+                </li>
+      
+                <li><a href="comparison.html"><strong>Comparison</strong></a></li>
+                <li><a href="data.html"><strong>Data</strong></a></li>
+              </ul>
+            </div>
+              
+          </div>
+      </nav>
+    </header>
+
+    <!-- content -->
+    <div class="content-container container-fluid">
+      <div class="row">
+
+        <!-- main content -->
+        <main class="col-md-7 col-xs-12">
+          <div class="main-padding">
+            <h1 class="header">Latitude vs. Temperature</h1>
+          </div>
+        </main>
+
+        <!-- side content -->
+        <side class="col-md-5 col-xs-12">
+          <div class="side-padding">
+            <h2 class="header">Visualizations</h2>
+          </div>
+        </side>
+
+        <!-- main content -->
+        <main class="col-md-7 col-xs-12">
+          <div class="main-padding">
+            <section class="main-content">
+              <img class="main-image-nonfloat" src="../Resources/assets/images/Fig1.png" alt="temp vs latitude">
+              <p>There appears to be a strong relationship between latitude and temperature, as shown on the above scatterplot. From about -20 to 20 degrees latitude, the plot shows the highest temperatures for the time when the data was pulled. This range closely aligns with the latitude band between the Tropic of Capricorn and the Tropic of Cancer, which are the boundaries for the tropics, a region that stays warm year round.
+                <br><br>
+                On this plot, the negative latitude cities show higher temperatures for their latitudes than the positive latitude cities. This is likely due to the fact that the data was pulled at the end of February, which is still winter in the northern hemisphere and summer in the southern.
+              </p>
+            </section>
+          </div>
+        </main>
+
+        <!-- side content -->
+        <side class="col-md-5 col-xs-12">
+          <div class="side-padding">
+            <section class="container-fluid">
+              <div class="row side-row">
+                <div class="col-md-6 col-xs-3">
+                  <a href="./temp.html">
+                    <img src="../Resources/assets/images/Fig1.png" alt="max temperature vs latitude" class="img-thumbnail">
+                  </a>
+                </div>
+                <div class="col-md-6 col-xs-3">
+                  <a href="./humidity.html">
+                    <img src="../Resources/assets/images/Fig2.png" alt="humidity vs latitude" class="img-thumbnail">
+                  </a>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-6 col-xs-3 side-highlight">
+                  <a href="./cloudiness.html">
+                    <img src="../Resources/assets/images/Fig3.png" alt="cloudiness vs latitude" class="img-thumbnail">
+                  </a>
+                </div>
+                <div class="col-md-6 col-xs-3">
+                  <a href="./wind-speed.html">
+                    <img src="../Resources/assets/images/Fig4.png" alt="wind speed vs latitude" class="img-thumbnail">
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </side>
+      </div>
+    </div>
+    <!-- Empty rows: padding before footer -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box"></div>
+        </div>
+      </div>
+    </div> 
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-light text-light">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://github.com/clmonahan/API_WeatherPy/blob/master/WeatherPy_Final.ipynb"> Chelsea Monahan</a>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
