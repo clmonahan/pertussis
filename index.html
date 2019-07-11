@@ -58,7 +58,7 @@
                 <a class="nav-link js-scroll-trigger" href="#analysis">Analysis</a>
               </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#next">Next</a>
+            <a class="nav-link js-scroll-trigger" href="#legislation">Legislation</a>
           </li>
         </ul>
       </div>
@@ -137,7 +137,7 @@
         <img class="img-fluid" src="images/herd_immunity.png" alt="Herd Immunity">
         <a href="https://www.cdc.gov/pertussis/vaccines.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Ffeatures%2Fpertussis%2Findex.html">
         <br><br>
-          <img src="images/pertussis_vax.jpg" alt="Who Should Get Vaccinated?"></a>
+          <img class="img-fluid" src="images/pertussis_vax.jpg" alt="Who Should Get Vaccinated?" class="center"></a>
         <br><br><br>
         <h3>So What's the Problem?</h3>
         <!-- <br><br>
@@ -296,7 +296,7 @@
             <strong>Figure 1</strong> - Linear Regression plot of training data vs predicted
             <br><br>
             Predicted line has a shallow slope that shows a decreasing pertussis outbreak rate as the vaccination rate increases. 
-            Looking at the distribution of the training data plotted we can infer that the correlation between vaccination rate and Pertussis cases is not very strong.
+            Looking at the distribution of the training data plotted we can infer that the correlation between vaccination rate and pertussis cases is not very strong.
           </p>
           <br>
           <img class="img-fluid" src="images/accuracy.png" alt="Logistical Regression">
@@ -339,20 +339,30 @@
             To improve prediction model:
             <br><br>
             <ul>
-              <li>Look for more factors to include in the model that contribute to the spread of Pertussis.</li>
-              <li>Use social media feeds to detect possible incidents of Pertussis.</li>
+              <li>Look for more features to include in the model that contribute to the spread of pertussis.</li>
+              <li>Use social media feeds to detect possible incidents of pertussis.</li>
+              <li>Potential factors:
+                <ul>
+                  <li>Population density of county or biggest city in county</li>
+                  <li>Vacinity to international airport</li>
+                  <li>Population demographics: nationality within communities (travel potential)</li>
+                  <li>Vaccination rates for general population</li>
+                </ul>
+              </li>
+              <li>Zika virus machine learning model as inspiration for future model</li>
             </ul>
+              <img class="img-fluid" src="images/zika.png" alt="Zika Model">
             </p>
           </div>
         </div>
       </div>
     </section>
 
-  <section id="next">
+  <section id="legislation">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Next Steps</h2><br>
+            <h2>State Legislation Recommendations</h2><br>
             <!-- <div class="embed-responsive embed-responsive-16by9"> -->
               <img class="img-fluid" src="images/next.png" alt="Next Steps">
             <!-- </div> -->
@@ -362,22 +372,14 @@
               <li>Redding Record Searchlight: <a href="https://www.redding.com/story/news/local/2019/05/13/ca-schools-not-reporting-vaccination-rates-face-no-consequences/3576981002/">California schools have to submit vaccine rates, but face no consequences if they don't</a></li>
             </ul>
             </p>
-            <p> <strong>Suggestions for next steps</strong> 
+            <p> <strong>Suggestions to Increase Vaccination Rates: </strong>
               <ul>
-                <li>Provide more comprehensive education to parents about the vaccination benefits</li><br>
-                <li>Allow only medical exemptions for non-vaccination in schools with the following requirments:</li><br>
-                  <ul>
-                    <li>Exemption must have a health condition or prior adverse vaccine reaction rendering administration of the vaccine to that child medically unsafe.</li>
-                    <li>Required parents to become better informed about the benefits and risks of childhood vaccinations through consultation with a health care professional before exercising the exemption option.</li>
-                    <li>Exemption can only be issued by an MD</li><br>
-                  </ul>
-                <li>Create a state/national registry of medical exemptions with issuing physician</li><br>
-                  <ul>
-                    <li>Establish legislation that disciplines physicians for issuing exemptions for payment</li><br>
-                  </ul>
+                <li>Provide more comprehensive education to parents about the benefits of vaccination</li>
+                <li>Allow only medical exemptions for non-vaccination in schools</li>
+                <li>Create a state/national registry of medical exemptions with issuing physician</li>
+                <li>Establish legislation that disciplines physicians for issuing exemptions for payment</li>
                 <li>Establish legislation at the state level that requires schools to track and report vaccination information – with possible financial incentives or penalties</li>
               </ul>
-
               <strong>A parting thought…</strong> 
               <br><br>
                 When parents chose to not vaccinate their child, they place at greater risk persons who cannot be vaccinated for medical reasons, those who are too young to be fully vaccinated, and others for whom vaccines do not provide complete protection.  
@@ -390,7 +392,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">© 2019 Chelsea Monahan, Brooke Rodriguez, Tim Berry, & Steve Bogdan</p>
+      <p class="m-0 text-center text-white">© 2019 Chelsea Monahan, Brooke Rodriguez, Tim Barry, & Steve Bogdan</p>
     </div>
     <!-- /.container -->
   </footer>
